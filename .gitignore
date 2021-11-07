@@ -1,15 +1,14 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
 # compiled output
 /dist
+/app/dist
 /tmp
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
-package-lock.json
 
 # dependencies
 /node_modules
+/app/node_modules
 
 # profiling files
 chrome-profiler-events*.json
@@ -17,6 +16,7 @@ speed-measure-plugin*.json
 
 # IDEs and editors
 .idea
+.project
 .classpath
 .c9/
 *.launch
@@ -44,3 +44,13 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Environments
+env-vars.js
+.env
+local.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
